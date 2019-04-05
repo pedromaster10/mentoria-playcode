@@ -1,0 +1,15 @@
+body {
+    background-color: #745cc1;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    margin-top: 65px;
+}
+
+input {
+    display: block; /*colocar um input sobre o outro */
+    width: 100%; /*deixar os inputs da largura da janela*/
+    
+}
