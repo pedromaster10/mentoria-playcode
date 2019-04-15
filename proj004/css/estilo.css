@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+li {
+    list-style-type: none;
+    max-height: 100%;
+ }
+
+.menu .completo {
+    background-color: #27ae60;
+    
+}
+
+.menu .incompleto {
+    background-color: #4a4a4a;
+    max-height: 2000px
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 47px 20px 60px 20px;
+    color: white;
+    display: block;
+    border-bottom: 3px solid #fff;
+    padding-left: 90px;
+}
+
+.menu li a .img1 {
+    position: relative;
+    right: 40px;
+    top: 10px;
+}
+
+.menu li a .img2 {
+    position:absolute;
+    margin-top: 15px;
+    right: 9%;
+}
+
+ul .incompleto:hover {
+    background-color: #b6b5b6;
+}
+
+ul .completo:hover {
+    background-color:  #66cc66;
+}
