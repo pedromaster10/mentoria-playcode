@@ -14,7 +14,7 @@ h1 span {
 }
 
 .card {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .card img {
@@ -22,8 +22,10 @@ h1 span {
 }
 
 .card h2 {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
+    color: #4a4a4a;
 }
