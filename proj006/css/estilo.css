@@ -28,4 +28,5 @@ h1 span {
     font-weight: 300;
     text-transform: uppercase;
     color: #4a4a4a;
+    -webkit-font-smoothing: antialiased;
 }
