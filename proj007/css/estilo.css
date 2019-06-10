@@ -9,8 +9,21 @@ body {
     display: flex;
     justify-content: space-between;    
 }
+header h1{
+    margin: 0;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    width: 176px;
+    height: 78px;
+    margin-top: 18px;
+}
+
 header {
     
+}
+
+header h1 span {
+    visibility: hidden;
 }
 
 #topo {
