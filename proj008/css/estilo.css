@@ -1,0 +1,123 @@
+body {
+    display: flex;
+}
+
+aside {
+    background-color: #242536;
+    width: 16%;
+    height: 100vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+aside #titulo {
+  background-color: #151524;
+  display: block;
+  padding: 20px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+aside a span {
+    visibility: hidden;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    display: flex;
+    list-style: none;
+    padding: 15px;
+}
+
+aside li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+aside li:hover {
+    background-color: #151524;;
+}
+
+aside ul #primeiro::before {
+    content: url(../img/balance.png);
+    padding-left: 5%;
+    padding-right: 15%;
+}
+
+aside ul #segundo::before {
+    content: url(../img/dash.png);
+    padding-left: 5%;
+    padding-right: 12%;
+}
+
+aside ul #terceiro::before {
+    content: url(../img/signal.png);
+    padding-left: 5%;
+    padding-right: 12%;
+}
+
+aside ul #quarto::before {
+    content: url(../img/cubes.png);
+    padding-left: 5%;
+    padding-right: 12%;
+}
+
+aside ul #quinto::before {
+    content: url(../img/settins.png);
+    padding-left: 5%;
+    padding-right: 12%;
+}
+
+aside li span {
+    margin-left: 20%;
+}
+
+section#lado-form {
+    width: 84%;
+    height: 100vh;
+    background-color: #f4f4f4;
+    float: left;
+}
+
+section#lado-form .barra-alto {
+    width: ;
+    background-color: #242536;
+    padding: 36.5px
+}
+
+header nav {
+    background-color: #fff;
+    height: 60px;
+    margin-top: -15px;
+    display: flex;
+    align-content: space-between;
+}
+
+header nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    padding-right: 25px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #161616;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    
+}
+
+header nav li a:hover {
+    color: #FFB946;
+    border-bottom: 1px solid #FFB946;
+    padding-bottom: 20px;
+}
