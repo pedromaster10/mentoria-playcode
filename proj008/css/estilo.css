@@ -81,9 +81,9 @@ section#lado-form {
 }
 
 section#lado-form .barra-alto {
-    width: ;
+    width: 79vw;
     background-color: #242536;
-    padding: 36.5px
+    padding: 36.5px;
 }
 
 header nav {
@@ -114,4 +114,13 @@ header nav li a:hover {
     color: #FFB946;
     border-bottom: 2px solid #FFB946;
     padding-bottom: 20px;
+}
+
+section#lado-form .fundo-form {
+    background-color: #fff;
+    width: 95%;
+    height: 75%;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
