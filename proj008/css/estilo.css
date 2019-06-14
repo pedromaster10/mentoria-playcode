@@ -4,7 +4,7 @@ body {
 
 aside {
     background-color: #242536;
-    width: 16%;
+    width: 200px;
     height: 100vh;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
@@ -39,44 +39,38 @@ aside li a {
     display: block;
     text-decoration: none;
     color: #fff;
+    margin-left: 20px;
 }
 
 aside li:hover {
-    background-color: #151524;;
+    background-color: #151524;
+    border-left: 3px solid #FFB946;
 }
 
 aside ul #primeiro::before {
     content: url(../img/balance.png);
-    padding-left: 5%;
-    padding-right: 15%;
+    margin-right: 9px;
 }
 
 aside ul #segundo::before {
     content: url(../img/dash.png);
-    padding-left: 5%;
-    padding-right: 12%;
 }
 
 aside ul #terceiro::before {
     content: url(../img/signal.png);
-    padding-left: 5%;
-    padding-right: 12%;
+    margin-right: -17px;
 }
 
 aside ul #quarto::before {
     content: url(../img/cubes.png);
-    padding-left: 5%;
-    padding-right: 12%;
 }
 
 aside ul #quinto::before {
     content: url(../img/settins.png);
-    padding-left: 5%;
-    padding-right: 12%;
 }
 
 aside li span {
-    margin-left: 20%;
+    margin-left: 22%;
 }
 
 section#lado-form {
@@ -118,6 +112,6 @@ header nav li a {
 
 header nav li a:hover {
     color: #FFB946;
-    border-bottom: 1px solid #FFB946;
+    border-bottom: 2px solid #FFB946;
     padding-bottom: 20px;
 }
