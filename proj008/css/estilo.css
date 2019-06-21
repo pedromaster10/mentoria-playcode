@@ -16,7 +16,7 @@ aside {
 aside #titulo {
   background-color: #151524;
   display: block;
-  padding: 20px;
+  padding: 21px;
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -94,7 +94,7 @@ section#principal header {
 section#principal header span{
     float: right;
     padding: 20px;
-    background-image: url(/proj008/img/Oval\ 140.png);
+    background-image: url(/img/Oval140.png);
     background-repeat: no-repeat;
     padding-left: 5px;
     padding-top: 8px;
@@ -135,7 +135,7 @@ section#principal .modulo .container {
 }
 
 section#principal .modulo .container .canvas {
-    height: 80vh;
+    height: 70vh;
     background-color: #fff;
 
 }
