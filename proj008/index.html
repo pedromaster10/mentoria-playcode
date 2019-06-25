@@ -4,8 +4,7 @@
     <title>NUCLIOT - Projeto 8</title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/estilo.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Arial:300,500" rel="stylesheet">
-    <meta name="viewport" content="widgth:device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <aside>
@@ -32,26 +31,43 @@
             <div class="container">
                 <div class="canvas">
                     <form action="">
-                        <legend id="texto1">Personal information</legend>
+                        <legend id="titulo">Personal information</legend>
                         
-                        <input type="email" name="e-mail" id="email">
+                        <input type="email" name="e-mail" class="inptext" placeholder="E-mail" required>
+                        <img src="/proj008/img/checkVerde.png"><br>
                         
-                        <legend id="texto2">Lorem ipsum dolor sit amet, consectetur 
+                        <legend id="texto1">Lorem ipsum dolor sit amet, consectetur 
                         adipiscing elit. Cras id nisl eget nunc molestie maximus.</legend>
                         
-                        <input type="text" name="nome" id="nome"><br>
+                        <input type="text" name="nome" class="inptext" placeholder=" First Name"><br>
                        
-                        <input type="text" name="sobrenome" id="sobnome"><br>
+                        <input type="text" name="sobrenome" class="inptext" placeholder="Last Name"><br>
 
-                        <input type="text" name="e-mail" id="email"><br>
+                        <select name="" class="inptext">
+                            <option value="">New Zeland</option>
+                            <option value="">Brazil</option>
+                        </select><br>
 
-                        <input type="tel" name="telefone" id="telefone"><br>
+                        <input type="tel" name="telefone" class="inptext" placeholder="Phone">
+                        <img src="/proj008/img/checkVerde.png"><br>
 
-                        <legend id="texto1">Password</legend>
+                        <legend id="titulo" class="titulomargin">Password</legend>
 
-                        <input type="password" name="senha1" id="senha1"><br>
-                        <input type="password" name="novasenha" id="novasenha"><br>
-                        <input type="password" name="novasenha2" id="novasenha2"><br>
+                        <input type="password" name="senha" class="inptext" placeholder="Password"><br>
+                        <input type="password" name="senha" class="inptext" placeholder="New password"><br>
+                        <input type="password" name="senha" class="inptext" placeholder="New password again"><br>
+
+                        <legend id="titulo" class="titulomargin">Anythings</legend>
+
+                        <input type="checkbox" name="check" class="checkbox" id="check1">
+                        <label for="check1" id="label1">Güncelleme ve yenilikleri mail olarak almak istiyorum.</label><br>
+
+                        <input type="checkbox" name="check" class="checkbox" id="check2">
+                        <label for="check2" id="label2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Cras id nisl eget nunc molestie maximus</label><br> 
+                        
+
+                        <input type="button" id="bt1" type="submit" value="SAVE">
+
                     </form>
                 </div>
             </div>

@@ -7,7 +7,7 @@ body {
 aside {
     background-color: #242536;
     width: 200px;
-    height: 100vh;
+    height: 106vh;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -94,7 +94,7 @@ section#principal header {
 section#principal header span{
     float: right;
     padding: 20px;
-    background-image: url(/img/Oval140.png);
+    background-image: url(../img/Oval140.png);
     background-repeat: no-repeat;
     padding-left: 5px;
     padding-top: 8px;
@@ -135,7 +135,52 @@ section#principal .modulo .container {
 }
 
 section#principal .modulo .container .canvas {
-    height: 70vh;
+    height: 75%;
     background-color: #fff;
+    padding: 30px;
+}
 
+section#principal .modulo .container .canvas #titulo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #161616;
+    margin-bottom: 10PX;
+}
+
+section#principal .modulo .container .canvas .titulomargin {
+    margin-top: 40px;
+}
+
+section#principal .modulo .container .canvas #texto1 {
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+section#principal .modulo .container .canvas .inptext {
+    margin-bottom: 8px;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+}
+
+section#principal .modulo .container .canvas .checkbox {
+    margin-bottom: 15px;
+}
+
+section#principal .modulo .container .canvas label {
+    font-size: 14px;
+}
+
+section#principal .modulo .container .canvas #bt1 {
+    margin-top: 30px;
+    width: 400px;
+    height: 40px;
+    background-color:#3aca60;
+    border: none;
+    border-radius: 4px;
+    color: #Fff;
+    font-weight: bold;
 }
