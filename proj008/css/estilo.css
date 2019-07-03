@@ -49,29 +49,7 @@ aside li:hover {
     border-left: 3px solid #FFB946;
 }
 
-aside ul #primeiro::before {
-    content: url(../img/balance.png);
-    margin-right: 9px;
-}
-
-aside ul #segundo::before {
-    content: url(../img/dash.png);
-}
-
-aside ul #terceiro::before {
-    content: url(../img/signal.png);
-    margin-right: -15px;
-}
-
-aside ul #quarto::before {
-    content: url(../img/cubes.png);
-}
-
-aside ul #quinto::before {
-    content: url(../img/settins.png);
-}
-
-aside li span {
+aside li small {
     margin-left: 40px;
     font-size: 14px;
 }
