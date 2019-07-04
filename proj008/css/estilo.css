@@ -8,8 +8,6 @@ aside {
     background-color: #242536;
     width: 200px;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
 }
 
 aside #titulo {
@@ -26,33 +24,38 @@ aside h1 span {
     visibility: hidden;
 }
 
-aside ul {
-    margin: 0;
-    padding: 0;
+aside ul{
+    margin: 0; padding: 0;
 }
 
 aside li {
-    display: flex;
     list-style: none;
-    
+    height: 50px; 
+    line-height: 50px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+aside li i {
+    margin-right: 5px;
+}
+
+aside li small {
+    color: rgba(255, 255, 255, 0.6);
+    float: right;
+    margin-right: 15px;
 }
 
 aside li a {
     display: block;
     text-decoration: none;
     color: #fff;
-    margin-left: 15px;
-    font-size: 14px;
 }
 
 aside li:hover {
     background-color: #151524;
     border-left: 3px solid #FFB946;
-}
-
-aside li small {
-    margin-left: 40px;
-    font-size: 14px;
 }
 
 section#principal {
