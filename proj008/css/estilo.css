@@ -13,15 +13,16 @@ aside {
 }
 
 aside #titulo {
-  background-color: #151524;
-  display: block;
-  padding: 21px;
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
+  background-color: #151524;
+  margin: 0;
+  height: 60px;
+  
   background-position: center;
 }
 
-aside a span {
+aside h1 span {
     visibility: hidden;
 }
 
@@ -33,7 +34,7 @@ aside ul {
 aside li {
     display: flex;
     list-style: none;
-    padding: 15px;
+    
 }
 
 aside li a {

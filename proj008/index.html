@@ -1,80 +1,110 @@
 <!DOCTYPE html> 
 <html>
-<head>
-    <title>NUCLIOT - Projeto 8</title>
-    <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="css/estilo.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <aside>
-        <h1><a href="" id="titulo"><span>Nucliot</span></a></h1>
-        <nav>
-            <ul>
-                <li><a href="">Balance</a><small>$322</small></li>
-                <li><a href="">Dashboard</li>
-                <li><a href="">Base Stations</a></li>
-                <li><a href="">My projects</a></li>
-                <li><a href="">Settings</a></li>
-            </ul>
-        </nav>
-    </aside>
-    <section id="principal">
-        <header><span>TD</span></header>
-        <div class="modulo">
-            <div class="abas">
-                <nav>
-                    <ul>
-                        <li><a href="#">ACCOUNT</a></li>
-                        <li><a href="#">BILLING</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="container">
-                <div class="canvas">
-                    <form action="">
-                        <legend id="titulo">Personal information</legend>
+    <head>
+        <meta charset="UTF-8">
+        <title>NUCLIOT - Projeto 8</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="https://kit.fontawesome.com/b8d813650d.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <aside>
+            <h1 id="titulo"><span>Nucliot</span></h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>Balance</span>
+                            <small>$ 322</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-chart-area"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-signal"></i>    
+                            <span>Base Stations</span>
+                            <small>12</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-cubes"></i>        
+                            <span>My projects</span>
+                            <small>4</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section id="principal">
+            <header><span>TD</span></header>
+            <div class="modulo">
+                <div class="abas">
+                    <nav>
+                        <ul>
+                            <li><a href="#">ACCOUNT</a></li>
+                            <li><a href="#">BILLING</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="container">
+                    <div class="canvas">
+                        <form action="">
+                            <legend id="titulo">Personal information</legend>
+                            
+                            <input type="email" name="e-mail" class="inptext" placeholder="E-mail" required>
+                            <img src="/img/checkVerde.png"><br>
+                            
+                            <legend id="texto1">Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Cras id nisl eget nunc molestie maximus.</legend>
+                            
+                            <input type="text" name="nome" class="inptext" placeholder=" First Name"><br>
                         
-                        <input type="email" name="e-mail" class="inptext" placeholder="E-mail" required>
-                        <img src="/img/checkVerde.png"><br>
-                        
-                        <legend id="texto1">Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit. Cras id nisl eget nunc molestie maximus.</legend>
-                        
-                        <input type="text" name="nome" class="inptext" placeholder=" First Name"><br>
-                       
-                        <input type="text" name="sobrenome" class="inptext" placeholder="Last Name"><br>
+                            <input type="text" name="sobrenome" class="inptext" placeholder="Last Name"><br>
 
-                        <select name="" class="inptext">
-                            <option value="">New Zeland</option>
-                            <option value="">Brazil</option>
-                        </select><br>
+                            <select name="" class="inptext">
+                                <option value="">New Zeland</option>
+                                <option value="">Brazil</option>
+                            </select><br>
 
-                        <input type="tel" name="telefone" class="inptext" placeholder="Phone">
-                        <img src="/img/checkVerde.png"><br>
+                            <input type="tel" name="telefone" class="inptext" placeholder="Phone">
+                            <img src="/img/checkVerde.png"><br>
 
-                        <legend id="titulo" class="titulomargin">Password</legend>
+                            <legend id="titulo" class="titulomargin">Password</legend>
 
-                        <input type="password" name="senha" class="inptext" placeholder="Password"><br>
-                        <input type="password" name="senha" class="inptext" placeholder="New password"><br>
-                        <input type="password" name="senha" class="inptext" placeholder="New password again"><br>
+                            <input type="password" name="senha" class="inptext" placeholder="Password"><br>
+                            <input type="password" name="senha" class="inptext" placeholder="New password"><br>
+                            <input type="password" name="senha" class="inptext" placeholder="New password again"><br>
 
-                        <legend id="titulo" class="titulomargin">Anythings</legend>
+                            <legend id="titulo" class="titulomargin">Anythings</legend>
 
-                        <input type="checkbox" name="check" class="checkbox" id="check1">
-                        <label for="check1" id="label1">Güncelleme ve yenilikleri mail olarak almak istiyorum.</label><br>
+                            <input type="checkbox" name="check" class="checkbox" id="check1">
+                            <label for="check1" id="label1">Güncelleme ve yenilikleri mail olarak almak istiyorum.</label><br>
 
-                        <input type="checkbox" name="check" class="checkbox" id="check2">
-                        <label for="check2" id="label2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Cras id nisl eget nunc molestie maximus</label><br> 
-                        
+                            <input type="checkbox" name="check" class="checkbox" id="check2">
+                            <label for="check2" id="label2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Cras id nisl eget nunc molestie maximus</label><br> 
+                            
 
-                        <input type="button" id="bt1" type="submit" value="SAVE">
+                            <input type="button" id="bt1" type="submit" value="SAVE">
 
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</body>
+        </section>
+    </body>
     
 </html>
