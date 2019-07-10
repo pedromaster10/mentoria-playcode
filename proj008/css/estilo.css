@@ -39,6 +39,9 @@ aside li {
 
 aside li i {
     margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
 }
 
 aside li small {
@@ -56,6 +59,8 @@ aside li a {
 aside li:hover {
     background-color: #151524;
     border-left: 3px solid #FFB946;
+    cursor: pointer;
+    padding-left: 12px;
 }
 
 section#principal {
@@ -68,16 +73,10 @@ section#principal header {
     color: #fff;
     border-bottom: 1px solid #F2F2F2;
     font-size: 14px;
-}
-
-section#principal header span{
-    float: right;
-    padding: 20px;
-    background-image: url(../img/Oval140.png);
-    background-repeat: no-repeat;
-    padding-left: 5px;
-    padding-top: 8px;
-    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
 }
 
  section#principal .modulo .abas nav {
@@ -161,4 +160,9 @@ section#principal .modulo .container .canvas #bt1 {
     border-radius: 4px;
     color: #Fff;
     font-weight: bold;
+}
+
+section#principal .modulo .container .canvas .validate {
+    margin-left: 5px;
+    justify-content: center;
 }
