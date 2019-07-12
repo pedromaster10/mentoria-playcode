@@ -70,9 +70,6 @@ section#principal {
 section#principal header {
     background-color: #242536;
     height: 60px;
-    color: #fff;
-    border-bottom: 1px solid #F2F2F2;
-    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -117,25 +114,32 @@ section#principal .modulo .container .canvas {
     padding: 30px;
 }
 
-section#principal .modulo .container .canvas #titulo {
+section#principal form ul {
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+section#principal form #titulo {
     font-weight: bold;
     font-size: 20px;
     color: #161616;
     margin-bottom: 10PX;
 }
 
-section#principal .modulo .container .canvas .titulomargin {
+section#principal form .titulomargin {
     margin-top: 40px;
 }
 
-section#principal .modulo .container .canvas #texto1 {
+section#principal form small {
+    display: block;
+    width: 400px;
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 12px;
     color: #000000;
-    margin-bottom: 20px;
 }
 
-section#principal .modulo .container .canvas .inptext {
+section#principal form .inptext {
     margin-bottom: 8px;
     width: 400px;
     height: 40px;
@@ -143,15 +147,22 @@ section#principal .modulo .container .canvas .inptext {
     border-radius: 5px;
 }
 
-section#principal .modulo .container .canvas .checkbox {
+section#principal form .checkbox {
     margin-bottom: 15px;
 }
 
-section#principal .modulo .container .canvas label {
+section#principal form label{
     font-size: 14px;
 }
 
-section#principal .modulo .container .canvas #bt1 {
+section#principal form li.ok {
+    background-image: url(../img/checkVerde.png);
+    background-repeat: no-repeat;
+    background-position: top 10px right;
+    width: 430px;
+}
+
+section#principal form #bt1 {
     margin-top: 30px;
     width: 400px;
     height: 40px;
@@ -162,7 +173,3 @@ section#principal .modulo .container .canvas #bt1 {
     font-weight: bold;
 }
 
-section#principal .modulo .container .canvas .validate {
-    margin-left: 5px;
-    justify-content: center;
-}

@@ -67,40 +67,55 @@
                 <div class="container">
                     <div class="canvas">
                         <form action="">
-                            <legend id="titulo">Personal information</legend>
+                            <h2 id="titulo">Personal information</h2>
+                            <ul>
+                                <li class="ok">
+                                    <input type="email" name="e-mail" class="inptext" placeholder="E-mail" required>
+                                    <small id="texto1">Lorem ipsum dolor sit amet, consectetur 
+                                    adipiscing elit. Cras id nisl eget nunc molestie maximus.</small>
+                                </li>
+                                <li>
+                                    <input type="text" name="nome" class="inptext" placeholder=" First Name"><br>
+                                </li>
+                                <li>
+                                    <input type="text" name="sobrenome" class="inptext" placeholder="Last Name"><br>
+                                </li>
+                                <li>
+                                    <select name="" class="inptext">
+                                        <option value="">New Zeland</option>
+                                        <option value="">Brazil</option>
+                                    </select><br>
+                                </li>
+                                <li class="ok">
+                                    <input type="tel" name="telefone" class="inptext" placeholder="Phone">
+                                </li>
+                            </ul>
                             
-                            <input type="email" name="e-mail" class="inptext" placeholder="E-mail" required>
-                            <img class="validate" src="/img/checkVerde.png"><br>
+
+                            <h2 id="titulo" class="titulomargin">Password</h2>
+                            <ul>
+                                <li class="ok">
+                                    <input type="password" name="senha" class="inptext" placeholder="Password"><br>
+                                </li>
+                                <li>
+                                    <input type="password" name="senha" class="inptext" placeholder="New password"><br>
+                                </li>
+                                <li>
+                                    <input type="password" name="senha" class="inptext" placeholder="New password again"><br>
+                                </li>
+                            </ul>
                             
-                            <legend id="texto1">Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Cras id nisl eget nunc molestie maximus.</legend>
-                            
-                            <input type="text" name="nome" class="inptext" placeholder=" First Name"><br>
-                        
-                            <input type="text" name="sobrenome" class="inptext" placeholder="Last Name"><br>
-
-                            <select name="" class="inptext">
-                                <option value="">New Zeland</option>
-                                <option value="">Brazil</option>
-                            </select><br>
-
-                            <input type="tel" name="telefone" class="inptext" placeholder="Phone">
-                            <img class="validate" src="/img/checkVerde.png"><br>
-
-                            <legend id="titulo" class="titulomargin">Password</legend>
-
-                            <input type="password" name="senha" class="inptext" placeholder="Password"><br>
-                            <input type="password" name="senha" class="inptext" placeholder="New password"><br>
-                            <input type="password" name="senha" class="inptext" placeholder="New password again"><br>
-
-                            <legend id="titulo" class="titulomargin">Anythings</legend>
-
-                            <input type="checkbox" name="check" class="checkbox" id="check1">
-                            <label for="check1" id="label1">Güncelleme ve yenilikleri mail olarak almak istiyorum.</label><br>
-
-                            <input type="checkbox" name="check" class="checkbox" id="check2">
-                            <label for="check2" id="label2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Cras id nisl eget nunc molestie maximus</label><br> 
-                            
+                            <h2 id="titulo" class="titulomargin">Anythings</h2>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="check" class="checkbox" id="check1">
+                                    <label for="check1" id="label1">Güncelleme ve yenilikleri mail olarak almak istiyorum.</label><br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="check" class="checkbox" id="check2">
+                                    <label for="check2" id="label2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Cras id nisl eget nunc molestie maximus</label><br> 
+                                </li>
+                            </ul>
 
                             <input type="button" id="bt1" type="submit" value="SAVE">
 
