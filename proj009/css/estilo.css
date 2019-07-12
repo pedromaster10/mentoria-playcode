@@ -35,7 +35,7 @@
 
 .bg-image {
     /* Imagem usada */
-    background-image: url('/img/Background.png');
+    background-image: url(../img/Background.png);
 
     /* Centralizando e escalando */
     background-repeat: no-repeat;
