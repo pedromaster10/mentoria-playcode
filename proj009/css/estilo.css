@@ -1,0 +1,62 @@
+
+@font-face {
+    font-family: 'muliextrabold';
+    src: url('/fonts/muli-extrabold-webfont.woff2') format('woff2'),
+         url('/fonts/muli-extrabold-webfont.woff') format('woff'),
+         url('/fonts/muli-extrabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muliextralightitalic';
+    src: url('/fonts/muli-extralightitalic-webfont.woff2') format('woff2'),
+         url('/fonts/muli-extralightitalic-webfont.woff') format('woff'),
+         url('/fonts/muli-extralightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muliregular';
+    src: url('/fonts/muli-regular-webfont.woff2') format('woff2'),
+         url('/fonts/muli-regular-webfont.woff') format('woff'),
+         url('/fonts/muli-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.bg-image {
+    /* Imagem usada */
+    background-image: url('/img/Background.png');
+
+    /* Centralizando e escalando */
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+
+    /* altura e largura conforme o viewport */
+    height: 100vh;
+    width: 100vw;
+    filter: blur(8px) brightness(0.5);
+}
+
+
+section#principal {
+    width: 70%;
+    height: 550px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    border: 1px solid #979797;
+}
