@@ -48,10 +48,9 @@
     filter: blur(8px) brightness(0.5);
 }
 
-
 section#principal {
-    width: 70%;
-    height: 550px;
+    width: 682px;
+    height: 551px;
     background-color: #fff;
     position: absolute;
     top: 50%;
@@ -59,4 +58,13 @@ section#principal {
     transform: translate(-50%, -50%);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
     border: 1px solid #979797;
+}
+
+section#principal header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #D8D8D8;
+    width: 100%;
+
 }
