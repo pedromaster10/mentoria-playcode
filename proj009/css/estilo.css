@@ -1,9 +1,9 @@
 
 @font-face {
     font-family: 'muliextrabold';
-    src: url('/fonts/muli-extrabold-webfont.woff2') format('woff2'),
-         url('/fonts/muli-extrabold-webfont.woff') format('woff'),
-         url('/fonts/muli-extrabold.ttf') format('truetype');
+    src: url('../fonts/muli-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/muli-extrabold-webfont.woff') format('woff'),
+         url('../fonts/muli-extrabold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -11,9 +11,9 @@
 
 @font-face {
     font-family: 'muliextralightitalic';
-    src: url('/fonts/muli-extralightitalic-webfont.woff2') format('woff2'),
-         url('/fonts/muli-extralightitalic-webfont.woff') format('woff'),
-         url('/fonts/muli-extralightItalic.ttf') format('truetype');
+    src: url('../fonts/muli-extralightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/muli-extralightitalic-webfont.woff') format('woff'),
+         url('../fonts/muli-extralightItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -21,9 +21,9 @@
 
 @font-face {
     font-family: 'muliregular';
-    src: url('/fonts/muli-regular-webfont.woff2') format('woff2'),
-         url('/fonts/muli-regular-webfont.woff') format('woff'),
-         url('/fonts/muli-regular.ttf') format('truetype');
+    src: url('../fonts/muli-regular-webfont.woff2') format('woff2'),
+         url('../fonts/muli-regular-webfont.woff') format('woff'),
+         url('../fonts/muli-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -66,5 +66,42 @@ section#principal header {
     height: 50px;
     border-bottom: 1px solid #D8D8D8;
     width: 100%;
+    padding: 20px;
+}
 
+header h2 {
+    color: #5E5E5E;
+    font-family: 'muliextrabold', serif;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+header small {
+    font-family: 'muliregular', serif;
+    color: #777879;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+header span {
+    font-family: 'muliregular', serif;
+    color: #777879;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+section#principal .container {
+    display: flex;
+}
+
+section#principal .container .pagamento {
+    background-color: #fff;
+    width: 383px;
+    height: 500px;
+    border-right: 1px solid #D8D8D8; 
+}
+
+section#principal .container .itens {
+    background-color: #FAFAFA;
+    flex-grow: 1;
 }
