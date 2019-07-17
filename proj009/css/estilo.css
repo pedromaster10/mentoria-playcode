@@ -31,6 +31,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
 .bg-image {
@@ -104,4 +106,42 @@ section#principal .container .pagamento {
 section#principal .container .itens {
     background-color: #FAFAFA;
     flex-grow: 1;
+}
+
+.container .pagamento h2 {
+    padding:10px;
+    padding-left: 21px;
+    font-size: 16px;
+    color: #777879;
+    font-family: 'muliregular', serif;
+    font-weight: 100;
+}
+
+.container .cartao {
+    display: inline-block;
+    width: 109px;
+    height: 96px;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 10px;
+   
+}
+
+.container .cartao:hover{
+    border: 1px solid #D1E2F6;
+    background-color: #F5F9FD;
+    padding-top: -50px;
+}
+
+.container .cartao img{
+    width: 73px;
+    height: 48px;
+    
+}
+
+.container .cartao span {
+    font-family: 'muliregular', serif;
+    color: #777879;
+    font-size: 12px;
+    font-weight: 100; 
 }
