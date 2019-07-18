@@ -108,7 +108,7 @@ section#principal .container .itens {
     flex-grow: 1;
 }
 
-.container .pagamento h2 {
+.container .pagamento .cartoes h2 {
     padding:10px;
     padding-left: 21px;
     font-size: 16px;
@@ -117,7 +117,7 @@ section#principal .container .itens {
     font-weight: 100;
 }
 
-.container .cartao {
+.container .cartoes .cartao {
     display: inline-block;
     width: 109px;
     height: 96px;
@@ -127,21 +127,28 @@ section#principal .container .itens {
    
 }
 
-.container .cartao:hover{
+.container .cartoes .cartao:hover{
     border: 1px solid #D1E2F6;
     background-color: #F5F9FD;
-    padding-top: -50px;
+    /* Cancela o efeito movimento do hover */
+    padding-top: 9px;
 }
 
-.container .cartao img{
+.container .cartoes .cartao img{
     width: 73px;
     height: 48px;
     
+    
 }
 
-.container .cartao span {
+.container .cartoes .cartao span {
     font-family: 'muliregular', serif;
     color: #777879;
     font-size: 12px;
     font-weight: 100; 
+}
+
+.container .cartoes hr{
+    border-top: 0.3px solid #D8D8D8;
+    
 }
