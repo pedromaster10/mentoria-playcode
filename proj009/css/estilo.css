@@ -124,7 +124,6 @@ section#principal .container .itens {
     text-align: center;
     margin-left: 10px;
     padding-top: 10px;
-   
 }
 
 .container .cartoes .cartao:hover{
@@ -149,6 +148,8 @@ section#principal .container .itens {
 }
 
 .container .cartoes hr{
-    border-top: 0.3px solid #D8D8D8;
+    border: 0px;
+    height: 1px;
+    color: #D8D8D8;
     
 }
