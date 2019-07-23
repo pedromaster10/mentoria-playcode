@@ -136,8 +136,6 @@ section#principal .container .itens {
 .container .cartoes .cartao img{
     width: 73px;
     height: 48px;
-    
-    
 }
 
 .container .cartoes .cartao span {
@@ -147,9 +145,9 @@ section#principal .container .itens {
     font-weight: 100; 
 }
 
-.container .cartoes hr{
-    border: 0px;
-    height: 1px;
-    color: #D8D8D8;
+.container .cartoes .linha {
+    border-bottom: 1px solid #D8D8D8;
+    width: 100%;
+    background-color: blue;
     
 }
