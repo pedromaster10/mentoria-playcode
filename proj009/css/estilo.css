@@ -125,6 +125,7 @@ section#principal .container .itens {
     color: #777879;
     font-family: 'muliregular', serif;
     font-weight: 100;
+    margin-top: 20px;
 }
 
 .container .cartoes .cartao {
