@@ -155,3 +155,10 @@ section#principal .container .itens {
     font-weight: 100; 
 }
 
+.container .pagamento .Dados-cartao {
+    padding: 30px;
+}
+
+.container .pagamento .form-cartao {
+    width: 289px;
+}
