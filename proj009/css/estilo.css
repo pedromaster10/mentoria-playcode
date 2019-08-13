@@ -33,6 +33,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'muliregular';
   }
 
 .bg-image {
@@ -104,11 +105,6 @@ section#principal .container .pagamento {
     padding: 10px 20px; 
 }
 
-section#principal .container .itens {
-    background-color: #FAFAFA;
-    flex-grow: 1;
-}
-
 .container .pagamento .cartoes .wallet {
     font-size: 16px;
     color: #777879;
@@ -156,9 +152,140 @@ section#principal .container .itens {
 }
 
 .container .pagamento .Dados-cartao {
-    padding: 30px;
+    padding: 20px 30px;
 }
 
-.container .pagamento .form-cartao {
-    width: 289px;
+.container .pagamento fieldset {
+    border: none;
+    text-align: center;
+}
+
+.container .pagamento input {
+    width: 270px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+}
+
+.pagamento ::-webkit-input-placeholder {
+    color: #c4cbd0;
+    font-size: 14px;
+    font-weight: 100;
+} 
+
+.container .pagamento input.data {
+    width: 149px;
+    margin-right: 10px;
+}
+
+.container .pagamento input.cvc {
+    width: 96px;
+    margin-left: 10px;
+}
+
+.pagamento .Dados-cartao button {
+    width: 100%;
+    padding: 15px;
+    background-color: #84d654;
+    font-size: 16px;
+    font-family: 'muliextrabold';
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+
+.pagamento .Dados-cartao label input {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.pagamento .Dados-cartao label {
+    display: flex;
+    color: #777879;
+    font-size: 14px;
+    font-family: 'muliregular';
+}
+
+.itens {
+    background-color: #ebebeb;
+    flex-grow: 1;
+    padding: 10px 10px 10px 10px;
+}
+
+.itens img {
+    width: 47px;
+    height: 47px;
+}
+
+.itens .produtos li {
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.itens .produtos li:last-child {
+    border: none;
+}
+
+.itens .produtos li .detalhes {
+    width: 80%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itens .produtos li .detalhes h3 {
+    color: #777879;
+    font-size: 12px;
+    font-family: 'muliextrabold';
+    margin-bottom: 3px;
+}
+
+.itens .produtos li .detalhes small {
+    font-size: 10px;
+    font-family: 'muliextralightitalic';
+    color: #4a4a4a;
+    margin-bottom: 3px;
+}
+
+.itens .produtos li .detalhes span {
+    color: #9c9c9c;
+    font-size: 10px;
+    font-family: 'muliextrabold';
+}
+
+.itens .produtos li .preco {
+    color: #777879;
+    font-size: 12px;
+    font-family: 'muliextrabold';
+}
+
+.itens table {
+    border-spacing: 0;
+    width: 100%;
+    border-top: 1px solid #d6d4d7;
+    color: #777879;
+    font-size: 12px;
+    margin-top: 50px;
+}
+
+.itens table th {
+    text-align: left;
+}
+
+.itens table td {
+    text-align: right;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.itens table tfoot * {
+    border-top: 1px solid #d6d4d7;
+    font-family: 'muliextrabold';
+    padding-top: 10px;
 }

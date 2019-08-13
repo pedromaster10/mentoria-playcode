@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -37,18 +38,86 @@
                     <h2 class="new-card">New Card</h2>
                 </div>
                 <div class="Dados-cartao">
-                    <form class="form-cartao">
-                        <input type="text" class="numero-cartao" placeholder="Name on card">
-                        <input type="number" name="" id="">
-                        <input type="date" name="" id="">
-                        <input type="number" name="" id="">
-                        <input type="checkbox" name="" id="">
-                        <input type="button" value="Continue">
+                    <form action="">
+                        <fieldset>
+
+                            <input type="text" placeholder="Name on card">
+                            <input type="text" placeholder="1111-1111-1111-1111">
+                            <input type="text" class="data" placeholder="MM/YY">
+                            <input type="text" class="cvc" placeholder="CVC">
+
+                            <label for="addWallet">
+                                <input type="checkbox" name="addWallet">
+                                Add card to wallet
+                            </label>
+                            
+                            <button>Continue</button>
+                        </fieldset>
                     </form>
                 </div>
             </div>
             <div class="itens">
-    
+                <ul class="produtos">
+                    <li>
+                        <img src="../proj009/img/sapato.png" alt="">
+                        <div class="detalhes">
+                            <h3>The Chelsea Boot</h3>
+                            <small>Black</small>
+                            <span>Quantity: 1</span>
+                        </div>
+                        <span class="preco">$235</span>
+                    </li>
+                    <li>
+                        <img src="../proj009/img/mochila.png" alt="">
+                        <div class="detalhes">
+                            <h3>The Twill Snap Backpack</h3>
+                            <small>Reverse Denim + Brown leather</small>
+                            <span>Quantity: 1</span>
+                        </div>
+                        <span class="preco">$65</span>
+                    </li>
+                    <li>
+                        <img src="../proj009/img/bolsa.png" alt="">
+                        <div class="detalhes">
+                            <h3>The Twill Zip Tote</h3>
+                            <small>Reverse Denim + Black leather</small>
+                            <span>Quantity: 1</span>
+                        </div>
+                        <span class="preco">$48</span>
+                    </li>
+                    <li>
+                        <img src="../proj009/img/cachecol.png" alt="">
+                        <div class="detalhes">
+                            <h3>The Chunck Wood Scarf</h3>
+                            <small>Black</small>
+                            <span>Quantity: 1</span>
+                        </div>
+                        <span class="preco">$50</span>
+                    </li>
+                </ul>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Subtotal</th>
+                            <td>$398</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Shipping</th>
+                            <td>Free</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Taxes</th>
+                            <td>12.12</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td>$410.12</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
         </div>
     </section>
