@@ -6,7 +6,7 @@ body {
 aside {
     background-color: #3a3c40;
     text-align: center;
-    padding-top: 40px !important;
+    padding: 40px !important;
 }
 
 aside img {
@@ -51,3 +51,27 @@ aside .redes-sociais li a {
     color: #fff;
 }
 
+aside .habilidades {
+    text-align: left;
+}
+
+aside .habilidades h3 {
+    color: #eeeeee;
+    font-weight: 500;
+    font-size: 1em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+aside .habilidades small {
+    color: #8fa4af;
+    font-size: 0.750em;
+}
+
+aside .habilidades progress {
+    margin-bottom: 5px;
+}
+
+aside .habilidades progress::-webkit-progress-value {
+    background-color: #f1b668 !important;
+}
