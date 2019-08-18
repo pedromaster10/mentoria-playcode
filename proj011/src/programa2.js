@@ -17,7 +17,7 @@ https://www.w3schools.com/jsref/met_win_alert.asp
     Bom dia Bia, caso o nome informado seja Bia.
 *******************************************************************************/
     
-var nome = prompt("Digite o seu nome: ");
+var nome = prompt("Digite o seu nome: ", "Bia");
 
     if (nome != null) {
         alert("Bom dia " + nome);

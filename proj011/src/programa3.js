@@ -19,7 +19,7 @@ https://www.w3schools.com/jsref/jsref_operators.asp
 *******************************************************************************/
 
 let maiorIdade = false;
-let idade = prompt("Digite a sua idade: ");
+let idade = prompt("Digite a sua idade: ", "18");
 
 if (idade >= 18) {
 	maiorIdade = true;
