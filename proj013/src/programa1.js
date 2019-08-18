@@ -5,7 +5,16 @@
 		a mensagem "Temperatura negativa". Se for maior que zero, retorna a mensagem
 		"Temperatura positiva"
 *******************************************************************************/
-
+function termostato(temperatura) {
+	let resposta;
+	if (temperatura < 0) {
+		resposta = "Temperatura negativa";
+		return resposta;
+	} else {
+		resposta = "Temperatura positiva";
+		return resposta;
+	}
+}
 
 
 
@@ -20,7 +29,22 @@
 		nota válida, a função deve retornar "Aprovado" ou "Reprovado". A média para
 		aprovação é 60%.
 *******************************************************************************/
+function boletimEscolar(nota) {
+	let msg;
+	if (nota < 0 || nota > 10) {
+		msg = "Nota inválida";
+		return msg;
+	} else {
+		if ( nota >= 6) {
+			msg = "Aprovado";
+			return msg;
+		} else {
+			msg = "Reprovado";
+			return msg;
+		}
+	}
 
+}
 
 
 
@@ -37,7 +61,22 @@
 		- RJ     -> 18,20
 		- Outros -> 35,90
 *******************************************************************************/
-
+function calcularFrete(estado) {
+	let preço;
+	if (estado == "MG") {
+		preço = 12.50;
+		return preço;	
+	} else if (estado == "SP") {
+		preço = 23.90;
+		return preço;
+	} else if (estado == "RJ") {
+		preço = 18.20;
+		return preço;
+	} else {
+		preço = 35.90;
+		return preço;
+	}
+}
 
 
 
@@ -52,7 +91,19 @@
 		- de 1,60 a 1,85 -> "altura normal"
 		- mais de um 1,85 -> "joga basquete?"
 *******************************************************************************/
-
+function calcularAltura (altura) {
+	let resposta;
+	if (altura < 1.60) {
+		resposta = "baixinho";
+		return resposta;
+	} else if (altura >= 1.60 && altura <= 1.85) {
+		resposta = "altura normal";
+		return resposta;
+	} else {
+		resposta = "joga basquete?";
+		return resposta;
+	}
+}
 
 
 
@@ -65,3 +116,14 @@
 		retorna a mensagem "Login efetuado com sucesso", senão, retorna a mensagem
 		"Senha inválida".
 *******************************************************************************/
+function validarSenha(senha) {
+	let msg;
+	switch(senha) {
+		case "123456":
+			msg = "Login efetuado com sucesso";
+			return msg;
+		default:
+			msg = "Senha inválida";
+			return msg;
+	}
+}
