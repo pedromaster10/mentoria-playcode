@@ -118,12 +118,11 @@ function calcularAltura (altura) {
 *******************************************************************************/
 function validarSenha(senha) {
 	let msg;
-	switch(senha) {
-		case "123456":
+		if (senha == "123456"){
 			msg = "Login efetuado com sucesso";
 			return msg;
-		default:
+		} else {
 			msg = "Senha inválida";
 			return msg;
-	}
+		} 
 }
