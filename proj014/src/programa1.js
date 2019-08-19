@@ -96,3 +96,19 @@ function nomeMes (mes) {
 		Use essa referência para abranger todos os elementos:
 		https://pt.wikipedia.org/wiki/Tabela_peri%C3%B3dica#Estrutura_da_tabela_peri%C3%B3dica		
 *******************************************************************************/
+function tabelaPeriodica (sigla) {
+	switch (sigla) {
+		case "Zn":
+			sigla = "zinco";
+			return sigla;
+		case "Pt":
+			sigla = "platina";
+			return sigla;
+		case "Sn":
+			sigla = "estanho";
+			return sigla;
+		case "Br":
+			sigla = "bromo";
+			return sigla;
+	}
+}
