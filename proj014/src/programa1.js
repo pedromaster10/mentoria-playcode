@@ -8,7 +8,23 @@
 			RJ     -> 18,20
 			Outros -> 35,90
 *******************************************************************************/
-
+function calcularFrete(estado) {
+	let preco;
+	switch(estado) {
+		case "MG":
+			preco = 12.50;
+			return preco;
+		case "SP":
+			preco = 23.90;
+			return preco;
+		case "RJ":
+			preco = 18.20;
+			return preco;
+		default:
+			preco = 35.90;
+			return preco;
+	}
+}
 
 
 
@@ -22,7 +38,50 @@
 		março e assim por diante, até 12 para dezembro. Deve retornar a mensagem
 		"Mês inválido" caso seja usado algum número que não esteja entre 1 e 12.
 *******************************************************************************/
-
+function nomeMes (mes) {
+	let nome;
+	switch(mes) {
+		case 1:
+			nome = "janeiro";
+			return nome;
+		case 2:
+			nome = "fevereiro";
+			return nome;
+		case 3:
+			nome = "março";
+			return nome;
+		case 4:
+			nome = "abril";
+			return nome;
+		case 5:
+			nome = "maio";
+			return nome;
+		case 6:
+			nome = "junho";
+			return nome;
+		case 7:
+			nome = "julho";
+			return nome;
+		case 8:
+			nome = "agosto";
+			return nome;
+		case 9:
+			nome = "setembro";
+			return nome;
+		case 10:
+			nome = "outubro";
+			return nome;
+		case 11:
+			nome = "novembro";
+			return nome;
+		case 12:
+			nome = "dezembro";
+			return nome;			
+		default:
+			nome = "Mês inválido";
+			return nome;
+	}
+}
 
 
 
