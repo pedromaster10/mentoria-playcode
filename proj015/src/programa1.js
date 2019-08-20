@@ -5,7 +5,14 @@
 		Exemplo: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
 	
 *******************************************************************************/
-
+function numerosAte20 () {
+	let aux = new String();
+	for (let i = 0; i <= 20; i++) {
+		aux = aux + i.toString() + " ";
+	}
+	return aux;
+	
+}
 
 
 
@@ -16,7 +23,17 @@
 		rados por espaço até o limite definido pelo valor passado no parâmetro.
 		Exemplo: numerosImpares(9) deve retornar 1 3 5 7 9
 *******************************************************************************/
-
+function numerosImpares (limite) {
+	let aux = new String();
+	for (let i = 0 ; i <= limite; i++) {
+		if (i % 2 == 0) {
+			continue;
+		} else {
+			aux = aux + i.toString() + " ";
+		}
+	}
+	return aux;
+}
 
 
 
@@ -26,4 +43,10 @@
 		os números em ordem regressiva de 100 a 0, devidamente separados por espaço.
 		Exemplo: 100 99 98 97 96 95 94 93 92 91 90 89 .. 7 6 5 4 3 2 1 0
 *******************************************************************************/
-
+function contagemRegressiva () {
+	let aux = new String();
+	for (let i = 100; i >= 0; i--) {
+		aux = aux + i.toString() + " ";
+	}
+	return aux;
+}
