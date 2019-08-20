@@ -4,6 +4,11 @@
 		os dias úteis da semana:
 		Segunda-feira, Terça-feira, Quarta-feira, Quinta-feira, Sexta-feira
 *******************************************************************************/
+function diasUteis () {
+	var diasSemana = ["Segunda-feira", "Terça-feira", "Quarta-feira", 
+	"Quinta-feira", "Sexta-feira"];
+	return diasSemana;
+}
 
 
 
@@ -16,7 +21,11 @@
 		push. Referência:
 		https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 *******************************************************************************/
-
+function semanaCompleta () {
+	let dias = diasUteis();
+	dias.push("Sábado", "Domingo");
+	return dias;
+}
 
 
 
@@ -30,7 +39,23 @@
 		Tabela Periódica para consulta:
 		https://pt.wikipedia.org/wiki/Tabela_peri%C3%B3dica#Estrutura_da_tabela_peri%C3%B3dica
 *******************************************************************************/
+function tabelaPeriodica() {
+	let elementos = new Array();
 
+	let hidrogenio = { Sigla:"H", nome: "hidrogênio", numeroAtomico: 1 };
+
+	let helio = { Sigla:"He", nome:"hélio", numeroAtomico: 2 };
+
+	let litio = { Sigla: "Li", nome: "lítio", numeroAtomico: 3 };
+
+	let berílio = { Sigla: "Be", nome: "berílio", numeroAtomico: 4};
+
+	let boro = { Sigla: 'B', nome: "boro", numeroAtomico: 5 };
+
+	elementos.push(hidrogenio, helio, litio, berílio, boro);
+
+	return elementos;
+}
 
 
 
