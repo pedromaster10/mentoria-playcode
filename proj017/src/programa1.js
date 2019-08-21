@@ -14,6 +14,28 @@
 		~> "Motor 1000 cilindradas a álcool está desligado"
 
 *******************************************************************************/
+class Motor {
+
+	constructor (cilindradas, combustivel) {
+		this.cilindradas = cilindradas;
+		this.combustivel = combustivel;
+	}
+
+	ligar() {
+		let texto = new String();
+		texto = "Motor "+this.cilindradas+" cilindradas a "+this.combustivel+
+		" está ligado";
+		return texto;
+	}
+
+	desligar() {
+		let texto = new String();
+		texto = "Motor "+this.cilindradas+" cilindradas a "+this.combustivel+
+		" está desligado";
+		return texto;
+	}
+}
+
 
 
 
@@ -43,7 +65,28 @@
 		~> 5
 		
 *******************************************************************************/
+class Calculadora {
+	constructor (num1, num2) {
+		this.num1 = num1;
+		this.num2 = num2;
+	}
 
+	somar() {
+		return this.num1 + this.num2;
+	}
+
+	subtrair() {
+		return this.num1 - this.num2;
+	}
+
+	multiplicar() {
+		return this.num1 * this.num2;
+	}
+
+	dividir() {
+		return this.num1 / this.num2;
+	}
+}
 
 
 
