@@ -65,6 +65,7 @@ class Motor {
 		~> 5
 		
 *******************************************************************************/
+
 class Calculadora {
 	constructor (num1, num2) {
 		this.num1 = num1;
