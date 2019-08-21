@@ -67,3 +67,14 @@ function tabelaPeriodica() {
 		retornado no array.
 		Exemplo: numerosImpares(10) deve retornar o array [1, 3, 5, 7, 9]
 *******************************************************************************/
+function numerosImpares (limite) {
+	let aux = new Array();
+	let indice = 0;
+	for (let i = 0; i <= limite; i ++) {
+		if (i % 2 != 0 ) {
+			aux[indice] = i;
+			indice++;
+		}
+	}	
+	return aux;
+}
