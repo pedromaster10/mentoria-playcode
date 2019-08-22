@@ -120,7 +120,19 @@ class Calculadora {
 		https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date
 
 *******************************************************************************/
+class Calendario {
+	constructor() {};
 
+	static nomeDias () {
+		var diasSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", 
+		"Quinta-feira", "Sexta-feira", "Sabado", "Domingo"];
+		return diasSemana;
+	}
+
+	static diaSemana (dataSring) {
+		
+	}
+}
 
 
 
