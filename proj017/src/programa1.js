@@ -121,7 +121,6 @@ class Calculadora {
 
 *******************************************************************************/
 class Calendario {
-	constructor() {};
 
 	static nomeDias () {
 		var diasSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", 
