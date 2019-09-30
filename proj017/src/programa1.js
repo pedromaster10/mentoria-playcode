@@ -101,7 +101,7 @@ class Calculadora {
 		Defina a classe Calendario. Ela deve ter 2 métodos estáticos. O primeiro
 		método chamado nomeDias deve retornar um array com os dias da semana,
 		começando com domingo.
-
+9
 		Calendario.nomeDias()
 		~> ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"]
 
@@ -122,14 +122,39 @@ class Calculadora {
 *******************************************************************************/
 class Calendario {
 
-	static nomeDias () {
-		var diasSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", 
-		"Quinta-feira", "Sexta-feira", "Sabado", "Domingo"];
-		return diasSemana;
+	/* http://clubedosgeeks.com.br/programacao/mudar-formato-de-data-em-javascript */
+
+	static nomeDias() {
+		var semana = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 
+		'quinta-feira', 'sexta-feira', 'sabado', 'domingo'];
+		return semana;
 	}
 
-	static diaSemana (dataSring) {
-		
+	static diaSemana (dataString) {
+		var dia = dataString.substring(0,1);
+		var mes = dataString.substring(3,4);
+		var ano = dataString.substring(6,9);
+
+		var novadata = ano + '/' + mes + '/' + dia;
+		var data = new Date(novadata);
+
+		var semana2 = Calendario.nomeDias();
+
+		if (data.getDay() == 0) {
+			return semana2[0];
+		} else if (data.getDay() == 1) {
+			return semana2[1];
+		} else if (data.getDay() == 2) {
+			return semana2[2];
+		} else if (data.getDay() == 3) {
+			return semana2[3];
+		} else if (data.getDay() == 4) {
+			return semana2[4];
+		} else if (data.getDay() == 5) {
+			return semana2[5];
+		} else {
+			return semana2[6];
+		}
 	}
 }
 
