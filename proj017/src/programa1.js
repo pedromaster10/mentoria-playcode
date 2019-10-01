@@ -90,10 +90,6 @@ class Calculadora {
 }
 
 
-
-
-
-
 /*******************************************************************************
 	
 	Tarefa 3:
@@ -126,7 +122,7 @@ class Calendario {
 
 	static nomeDias() {
 		var semana = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 
-		'quinta-feira', 'sexta-feira', 'sabado', 'domingo'];
+		'quinta-feira', 'sexta-feira', 'sabado'];
 		return semana;
 	}
 
@@ -136,7 +132,7 @@ class Calendario {
 		var novadata = split[2] + "/" +split[1]+"/"+split[0];
 		var data = new Date(novadata);
 
-		var semana2 = Calendario.nomeDias();
+		var semana2 = this.nomeDias();
 
 		if (data.getDay() == 0) {
 			return semana2[0];
@@ -155,11 +151,6 @@ class Calendario {
 		}
 	}
 }
-
-
-
-
-
 
 
 
@@ -182,11 +173,14 @@ class Calendario {
 		~> "tuesday"
 
 *******************************************************************************/
+class CalendarioIngles extends Calendario {
 
-
-
-
-
+	static nomeDias() {
+		var semana = ['sunday', 'monday', 'tuesday', 'wednesday', 
+		'thursday', 'friday', 'saturday'];
+		return semana;
+	}
+}
 
 
 
@@ -202,4 +196,25 @@ class Calendario {
 		
 *******************************************************************************/
 
+class Agenda {
+	
+	constructor() {
+		this.contatos = [];
+	}
 
+	 adicionaContato(nome, telefone) {
+		class Contato {
+			constructor(){
+			this.nome;
+			this.telefone;
+			}
+	 	}	
+		var contato = new Contato(nome, telefone); 
+		this.contatos = contato;
+	}
+
+	listaContatos() {
+		return this.contatos;
+	}
+
+}
