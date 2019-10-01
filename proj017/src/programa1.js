@@ -131,11 +131,9 @@ class Calendario {
 	}
 
 	static diaSemana (dataString) {
-		var dia = dataString.substring(0,1);
-		var mes = dataString.substring(3,4);
-		var ano = dataString.substring(6,9);
-
-		var novadata = ano + '/' + mes + '/' + dia;
+		
+		var split = dataString.split('/');
+		var novadata = split[2] + "/" +split[1]+"/"+split[0];
 		var data = new Date(novadata);
 
 		var semana2 = Calendario.nomeDias();
