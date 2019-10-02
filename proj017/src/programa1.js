@@ -204,13 +204,13 @@ class Agenda {
 
 	 adicionaContato(nome, telefone) {
 		class Contato {
-			constructor(){
-			this.nome;
-			this.telefone;
+			constructor(nome, telefone){
+			this.nome = nome;
+			this.telefone = telefone;
 			}
 	 	}	
 		var contato = new Contato(nome, telefone); 
-		this.contatos = contato;
+		this.contatos.push(contato);
 	}
 
 	listaContatos() {
