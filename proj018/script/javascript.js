@@ -1,7 +1,7 @@
 function calculaIMC() {
-    var altura = document.getElementById("inputAltura").value;
-    var peso = document.getElementById("inputPeso").value;
-    var botao = document.getElementById("btn");
+    var altura = document.getElementById("altura").value;
+    var peso = document.getElementById("peso").value;
+    var botao = document.getElementsByClassName("botaoIMC");
 
     var resultado;
 
