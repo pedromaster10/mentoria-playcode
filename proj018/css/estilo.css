@@ -8,7 +8,7 @@ body {
 }
 
 .card {
-  height: 34vh;
+  height: 38vh;
   text-align: left;
 }
 
@@ -25,7 +25,7 @@ body {
 .card input {
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
-    font-size: 100px;
+    font-size: 130px;
     text-align: center;
     width: 100%;
     background-color: transparent;
@@ -55,7 +55,7 @@ button {
     border-radius: 4px;
     text-align: center;
     text-transform: uppercase;
-    height: 148px;
+    height: 180px;
     box-shadow: 0 6px 0px 0 #245B3B;
     background-color: #27ae60;
 }
@@ -91,10 +91,6 @@ button {
     font-family: 'Oswald', sans-serif;
     color: #4a4a4a;
     font-weight: 100;
-}
-
-.resultado p {
- 
 }
 
 .escondido {
