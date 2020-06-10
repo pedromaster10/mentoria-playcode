@@ -5,6 +5,35 @@ function pegarElemento(elemento) {
 function mostrarResultado() {
     pegarElemento(".resultado").classList.remove("escondido");
     pegarElemento(".botaoIMC").classList.add("escondido");
+
+    var altura = document.getElementById("altura").value;
+    var peso = document.getElementById("peso").value;
+
+    var resultado = peso /  (altura * altura);
+
+  
+        var imcValor = pegarElemento(".imcValor");
+        var imcDesc = pegarElemento(".imcDesc");
+
+        imcValor.innerHTML = resultado.toLocaleString("pt-br", {maximumFractionDigits: 2});
+        
+        if (resultado < 16 ){
+            imcDesc.innerHTML =  "Magreza Grave";
+        } else if (resultado >= 16 && resultado < 17){
+            imcDesc.innerHTML =  "Magreza Moderada";
+        } else if (resultado >= 17 && resultado < 18.5){
+            imcDesc.innerHTML =  "Magreza leve";
+        } else if (resultado >= 18.5 && resultado < 25){
+            imcDesc.innerHTML =  "Saudavel";
+        } else if (resultado >= 25 && resultado < 30){
+            imcDesc.innerHTML =  "Sobrepeso";
+        } else if (resultado >= 30 && resultado < 35){
+            imcDesc.innerHTML =  "Obesidade Grau I";
+        } else if (resultado >= 35 && resultado < 40){
+            imcDesc.innerHTML =  "Obesidade Grau II (severa)";
+        } else if (resultado > 40){
+            imcDesc.innerHTML =  "Obesidade Grau III (mórbida)";
+        } 
 }
 
 function mostrarBotao() {
@@ -12,25 +41,11 @@ function mostrarBotao() {
     pegarElemento(".botaoIMC").classList.remove("escondido");
 }
 
-pegarElemento(".botaoIMC").addEventListener("click",mostrarResultado, calculaIMC);
-pegarElemento(".voltar").addEventListener("click", mostrarBotao);
+pegarElemento(".botaoIMC").addEventListener("click", function() {
+    mostrarResultado();
+} );
+pegarElemento(".voltar").addEventListener("click", function() {
+    mostrarBotao();
+} );
 
-
- function calculaIMC() {
-    var altura = document.getElementById("altura").value;
-    var peso = document.getElementById("peso").value;
-
-    var resultado;
-
-    resultado = (parseInt(peso) / (parseInt(altura) * parseInt(altura)));
-    if (resultado < 16 ) {
-        const valorImc = pegarElemento(".imcValor");
-        valorImc.innerHTML = resultado;
-        const desIMC = pegarElemento(".imcDesc");
-        desIMC.innerHTML =  "Magreza Grave";
-    } else {
-        valorImc.innerHTML = 99;
-        desIMC.innerHTML = "gordao";
-    }
-}
 
