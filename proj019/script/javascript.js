@@ -38,6 +38,15 @@ pegarElemento("#botao9").addEventListener("click", function() {
     adicionarNumero(9);
 });
 
+pegarElemento("#botao0").addEventListener("click", function() {
+    adicionarNumero(0);
+});
+
+pegarElemento("#botaoC").addEventListener("click", function() {
+    var display = pegarElemento(".display");
+    display.value = "";
+});
+
 function adicionarNumero(num) {
     var display = pegarElemento(".display");    
     display.value += num;
