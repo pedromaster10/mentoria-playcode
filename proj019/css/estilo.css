@@ -54,3 +54,15 @@ input[type=number] { /*remove as setas do input para o firefox */
     font-size: 40px;
     color: gray;
 }
+
+.cor-verde {
+    background-color: green;
+}
+
+.cor-laranja {
+    background-color: orange;
+}
+
+.escondido {
+    display: none;
+}

@@ -51,3 +51,21 @@ function adicionarNumero(num) {
     var display = pegarElemento(".display");    
     display.value += num;
 }
+
+pegarElemento("#convDtoR").addEventListener("click", function() {
+    mudarRealDolar();
+});
+
+pegarElemento("#convRtoD").addEventListener("click", function() {
+    mudarDolarReal();
+});
+
+function mudarRealDolar() {
+    pegarElemento("#convDtoR").classList.add("escondido");
+    pegarElemento("#convRtoD").classList.remove("escondido");
+}
+
+function mudarDolarReal() {
+    pegarElemento("#convRtoD").classList.add("escondido");
+    pegarElemento("#convDtoR").classList.remove("escondido");
+}
