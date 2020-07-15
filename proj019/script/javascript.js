@@ -45,27 +45,39 @@ pegarElemento("#botao0").addEventListener("click", function() {
 pegarElemento("#botaoC").addEventListener("click", function() {
     var display = pegarElemento(".display");
     display.value = "";
+    pegarElemento("#convRtoD").classList.remove("cor-laranja");
+    pegarElemento("#convDtoR").classList.remove("cor-laranja");
 });
 
-function adicionarNumero(num) {
+function adicionarNumero(num) { /* adiciona numero no display e pinta o botao conversor de laranja */
     var display = pegarElemento(".display");    
     display.value += num;
+    if(display.value != "") {
+        pegarElemento("#convRtoD").classList.add("cor-laranja");
+        pegarElemento("#convDtoR").classList.add("cor-laranja");
+    }
 }
 
-pegarElemento("#convDtoR").addEventListener("click", function() {
-    mudarRealDolar();
+pegarElemento("#convDtoR").addEventListener("click", function() { /* se o display estiver limpo, muda o botao para conversao de real para dolar*/
+    var display = pegarElemento(".display");
+    if (display.value == "") {
+        mudarRealDolar();
+    }
 });
 
-pegarElemento("#convRtoD").addEventListener("click", function() {
-    mudarDolarReal();
+pegarElemento("#convRtoD").addEventListener("click", function() { /* se o display estiver limpo, muda o botao para conversao de dolar para real*/
+    var display = pegarElemento(".display");
+    if (display.value == "") {
+        mudarDolarReal();
+    }
 });
 
-function mudarRealDolar() {
+function mudarRealDolar() { /* funcao que esconde botao dolar para real e exibe real para dolar*/
     pegarElemento("#convDtoR").classList.add("escondido");
     pegarElemento("#convRtoD").classList.remove("escondido");
 }
 
 function mudarDolarReal() {
-    pegarElemento("#convRtoD").classList.add("escondido");
+    pegarElemento("#convRtoD").classList.add("escondido"); /* funcao que esconde botao real pra dolar e exibe dolar para real*/
     pegarElemento("#convDtoR").classList.remove("escondido");
 }
