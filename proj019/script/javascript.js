@@ -2,52 +2,24 @@ function pegarElemento(elemento) {
     return document.querySelector(elemento);
 }
 
-pegarElemento("#botao1").addEventListener("click", function() {
-    adicionarNumero(1);
-});
+function pegarTodosElementos(elemento){
+    return document.querySelectorAll(elemento);
+}
 
-pegarElemento("#botao2").addEventListener("click", function() {
-    adicionarNumero(2);
-});
-
-pegarElemento("#botao3").addEventListener("click", function() {
-    adicionarNumero(3);
-});
-
-pegarElemento("#botao4").addEventListener("click", function() {
-    adicionarNumero(4);
-});
-
-pegarElemento("#botao5").addEventListener("click", function() {
-    adicionarNumero(5);
-});
-
-pegarElemento("#botao6").addEventListener("click", function() {
-    adicionarNumero(6);
-});
-
-pegarElemento("#botao7").addEventListener("click", function() {
-    adicionarNumero(7);
-});
-
-pegarElemento("#botao8").addEventListener("click", function() {
-    adicionarNumero(8);
-});
-
-pegarElemento("#botao9").addEventListener("click", function() {
-    adicionarNumero(9);
-});
-
-pegarElemento("#botao0").addEventListener("click", function() {
-    adicionarNumero(0);
-});
-
-pegarElemento("#botaoC").addEventListener("click", function() {
-    var display = pegarElemento(".display");
-    display.value = "";
-    pegarElemento("#convRtoD").classList.remove("cor-laranja");
-    pegarElemento("#convDtoR").classList.remove("cor-laranja");
-});
+var botoes = pegarTodosElementos(".num"); /* este for percorre todos os elementos da classe .num e adiciona  */
+for(var i=0; i< botoes.length; i++){      /* listeners com os respectivos values para todos os botoes, menos para o botao C*/
+    botoes[i].addEventListener("click", function(){ /* Se o value for C, o mesmo realiza o procedimento de limpar o Display*/
+        if(this.value != 'C') {
+            adicionarNumero(this.value);
+        } else {
+            var display = pegarElemento(".display");
+             display.value = "";
+            pegarElemento("#convRtoD").classList.remove("cor-laranja");
+            pegarElemento("#convDtoR").classList.remove("cor-laranja");
+        }
+        
+    })
+}
 
 function adicionarNumero(num) { /* adiciona numero no display e pinta o botao conversor de laranja */
     var display = pegarElemento(".display");    
@@ -62,6 +34,8 @@ pegarElemento("#convDtoR").addEventListener("click", function() { /* se o displa
     var display = pegarElemento(".display");
     if (display.value == "") {
         mudarRealDolar();
+    } else {
+        converteDolarReal();
     }
 });
 
@@ -69,6 +43,8 @@ pegarElemento("#convRtoD").addEventListener("click", function() { /* se o displa
     var display = pegarElemento(".display");
     if (display.value == "") {
         mudarDolarReal();
+    } else {
+        converteRealDolar();
     }
 });
 
@@ -80,4 +56,18 @@ function mudarRealDolar() { /* funcao que esconde botao dolar para real e exibe 
 function mudarDolarReal() {
     pegarElemento("#convRtoD").classList.add("escondido"); /* funcao que esconde botao real pra dolar e exibe dolar para real*/
     pegarElemento("#convDtoR").classList.remove("escondido");
+}
+
+function converteRealDolar() {
+    let display1 = pegarElemento(".display");
+    let numero = parseInt(display1.value);
+    numero = numero * 0.19;
+    display1.value =numero.toString();
+}
+
+function converteDolarReal() {
+    let display2 = pegarElemento(".display");
+    let numero = parseInt(display2.value);
+    numero = numero * 5.22;
+    display2.value = numero.toString();
 }
