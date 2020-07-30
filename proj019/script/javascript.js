@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+
 function pegarElemento(elemento) {
     return document.querySelector(elemento);
 }
@@ -60,14 +62,47 @@ function mudarDolarReal() {
 
 function converteRealDolar() {
     let display1 = pegarElemento(".display");
-    let numero = parseInt(display1.value);
-    numero = numero * 0.19;
-    display1.value =numero.toString();
+
+    // seta o endpoint e a chave da API
+    endpoint = 'convert';
+    acess_key = '19c1d9621048a16b7184f648cd3307ba';
+
+    //define a moeda inicial, a moeda alvo e o valor
+    from = 'BRL';
+    to = 'USD';
+    amount = display1.value;
+
+    //executa a conversao usando o endopoint 'convert'
+    $.ajax({
+        url: 'http://data.fixer.io/api/' + endpoint + '?acess_key=' + acess_key + '&from=' + from + '&to=' + to + '&amount=' + amount,
+        dataType: 'jsonp' ,
+        success:function(json) {
+            display2.value = json.result;
+        }
+    });    
+
 }
 
 function converteDolarReal() {
     let display2 = pegarElemento(".display");
-    let numero = parseInt(display2.value);
-    numero = numero * 5.22;
-    display2.value = numero.toString();
+    
+    // seta o endpoint e a chave da API
+    endpoint = 'convert';
+    acess_key = '19c1d9621048a16b7184f648cd3307ba';
+
+    //define a moeda inicial, a moeda alvo e o valor
+    from = 'USD';
+    to = 'BRL';
+    amount = display2.value;
+
+    //executa a conversao usando o endopoint 'convert'
+    $.ajax({
+        url: 'http://data.fixer.io/api/' + endpoint + '?acess_key=' + acess_key + '&from=' + from + '&to=' + to + '&amount=' + amount,
+        dataType: 'jsonp' ,
+        success:function(json) {
+           display2.value = json.result;
+        }
+    });
+    
 }
+});
