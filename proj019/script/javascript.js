@@ -24,8 +24,10 @@ for(var i=0; i< botoes.length; i++){      /* listeners com os respectivos values
 }
 
 function adicionarNumero(num) { /* adiciona numero no display e pinta o botao conversor de laranja */
-    var display = pegarElemento(".display");    
-    display.value += num;
+    var display = pegarElemento(".display");
+    let num1 = parseInt(num);
+    let num2 = num1.toLocaleString('pt-BR');  
+    display.value += num2;
     if(display.value != "") {
         pegarElemento("#convRtoD").classList.add("cor-laranja");
         pegarElemento("#convDtoR").classList.add("cor-laranja");
