@@ -1,8 +1,6 @@
-html, body{
-    box-sizing: border-box;
+* {
     margin: 0;
     padding: 0;
-    background-color: gray;
 }
 .numeros {
     display: grid;
@@ -14,17 +12,6 @@ html, body{
     height: 100%;
 }
 
-.calculadora{
-    width: 300px;
-    height: 400px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  
-}
 .calculadora .numeros .item {
     border: solid 1px #eaeaea;
     text-align: center;

@@ -1,5 +1,3 @@
-$( document ).ready(function() {
-
 function pegarElemento(elemento) {
     return document.querySelector(elemento);
 }
@@ -36,7 +34,7 @@ function adicionarNumero(num) { /* adiciona numero no display e pinta o botao co
 
 pegarElemento("#convDtoR").addEventListener("click", function() { /* se o display estiver limpo, muda o botao para conversao de real para dolar*/
     var display = pegarElemento(".display");
-    if (display.value == "") {
+    if (display.innerHtml == "") {
         mudarRealDolar();
     } else {
         converteDolarReal();
@@ -99,5 +97,3 @@ function converteDolarReal() {
     });   
     
 }
-
-});
