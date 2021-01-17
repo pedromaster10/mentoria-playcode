@@ -2,44 +2,20 @@
     margin: 0;
     padding: 0;
 }
-.numeros {
+
+.display {
+    display: grid;
+    grid-template-columns: 1fr; /*cria o layout de colunas*/
+    grid-template-rows: 20vh;   /*cria o layout de linhas*/ 
+
+}
+
+.keyboard {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /*cria o layout de colunas*/
-    grid-template-rows: 1fr 1 1fr 1fr; /*cria o layout de linhas*/
+    grid-template-rows: 20vh 20vh 20vh 20vh; /*cria o layout de linhas*/
     border: 1 solid;
     background-color: #fff;
-    width: 100%;
-    height: 100%;
-}
-
-.calculadora .numeros .item {
-    border: solid 1px #eaeaea;
-    text-align: center;
-    line-height: 90px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 40px;
-    color: gray;
-}
-
-.display::-webkit-outer-spin-button, /*remove as setas do input chrome,safari,edge,opera*/
-.display::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type=number] { /*remove as setas do input para o firefox */
-    -moz-appearance: textfield;
-}
-
-.display{
-    height: 70px;
-    width: 100%;
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 40px;
-    color: gray;
 }
 
 .cor-verde {
